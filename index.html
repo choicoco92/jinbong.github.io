@@ -4,150 +4,240 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="canonical" href="https://www.jinbong.shop/" />
-    <title>진봉 샘플실 | 골프웨어 · 티셔츠 샘플제작 전문 | 소량제작 가능</title>
-    <meta name="description" content="골프웨어·기능성 의류 전문 샘플실 | 제작부터 브랜드 런칭까지!">
-    <meta name="keywords" content="골프웨어 샘플제작, 의류 샘플실, 소량제작, 티셔츠 제작, 기능성 의류 제작, 골프복, 브랜드 의류제작, 서울 샘플실">
+    <title>진봉 샘플실 | 골프웨어·티셔츠 샘플제작 전문 | 서울 중랑구 의류 샘플실</title>
+    <meta name="description" content="서울 중랑구 위치, 골프웨어·기능성 의류 전문 샘플실. 티셔츠, 골프웨어, 기능성 의류 샘플제작 전문. 소량제작 가능, 빠른 납기, 1:1 맞춤 제작. 브랜드 런칭을 위한 완성도 높은 샘플 제작.">
+    <meta name="keywords" content="골프웨어 샘플제작, 의류 샘플실, 소량제작, 티셔츠 제작, 기능성 의류 제작, 골프복, 브랜드 의류제작, 서울 샘플실, 중랑구 샘플실, 오버핏 티셔츠, 피그먼트 티셔츠, 기능성 원단, 바람막이 제작">
     <meta name="author" content="진봉 샘플실">
-    <meta property="og:title" content="진봉 샘플실 | 골프웨어 · 티셔츠 샘플제작 전문" />
-    <meta property="og:description" content="골프웨어 및 다양한 의류의 샘플제작을 도와드립니다. 브랜드 런칭을 위한 완성도 높은 작업 진행." />
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="진봉 샘플실 | 골프웨어·티셔츠 샘플제작 전문 | 서울 중랑구 의류 샘플실" />
+    <meta property="og:description" content="서울 중랑구 위치, 골프웨어·기능성 의류 전문 샘플실. 티셔츠, 골프웨어, 기능성 의류 샘플제작 전문. 소량제작 가능, 빠른 납기, 1:1 맞춤 제작." />
     <meta property="og:image" content="https://www.jinbong.shop/images/og-image.png" />
     <meta property="og:url" content="https://www.jinbong.shop/" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="ko_KR" />
+    <meta property="og:site_name" content="진봉 샘플실" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="진봉 샘플실 | 골프웨어·티셔츠 샘플제작 전문" />
+    <meta name="twitter:description" content="서울 중랑구 위치, 골프웨어·기능성 의류 전문 샘플실. 티셔츠, 골프웨어, 기능성 의류 샘플제작 전문." />
+    <meta name="twitter:image" content="https://www.jinbong.shop/images/og-image.png" />
+    <link rel="alternate" hreflang="ko" href="https://www.jinbong.shop/" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
     <style>
         @font-face {
             font-family: 'Jalnan2';
             src: url('fonts/Jalnan2TTF.ttf') format('truetype');
+        }
+        :root {
+            --primary-color: #1a1a1a;
+            --secondary-color: #f8f9fa;
+            --accent-color: #007bff;
+            --text-color: #333;
         }
         body {
             font-family: 'Jalnan2', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #fff;
-            color: #222;
-            line-height: 1.6;
+            color: var(--text-color);
+            line-height: 1.8;
             scroll-behavior: smooth;
         }
         header {
-            background-image: url('images/je.png');
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/je.png');
             background-size: cover;
-            background-position: bottom;
-            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
             color: white;
-            padding: 120px 20px;
+            padding: 100px 20px;
             text-align: center;
             position: relative;
         }
         header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
             color: white;
-            text-shadow:
-                -2px -2px 0 #000,
-                 2px -2px 0 #000,
-                -2px  2px 0 #000,
-                 2px  2px 0 #000;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation: fadeInUp 1s ease;
+        }
+        header p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            animation: fadeInUp 1.2s ease;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
         nav {
-            background-color: #f8f9fa;
-            border-bottom: 1px solid #ddd;
+            background-color: rgba(255, 255, 255, 0.95);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
             position: sticky;
             top: 0;
             z-index: 999;
+            backdrop-filter: blur(10px);
         }
         nav ul {
             list-style: none;
             display: flex;
             justify-content: center;
             padding: 1rem;
-            gap: 2rem;
+            gap: 3rem;
             margin: 0;
         }
         nav a {
             text-decoration: none;
-            color: #333;
+            color: var(--text-color);
             font-weight: bold;
-            transition: 0.2s ease;
+            transition: all 0.3s ease;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+        }
+        nav a:hover {
+            color: var(--accent-color);
+            background-color: rgba(0, 123, 255, 0.1);
         }
         nav a.active {
-            color: #007bff;
-            border-bottom: 2px solid #007bff;
+            color: var(--accent-color);
+            border-bottom: 2px solid var(--accent-color);
         }
         section {
-            padding: 100px 20px;
-            max-width: 960px;
+            padding: 60px 20px;
+            max-width: 1200px;
             margin: auto;
-            min-height: 100vh;
+            min-height: auto;
         }
         h2 {
-            border-left: 4px solid #1c1c1c;
-            padding-left: 0.75rem;
-            margin-bottom: 1rem;
-            font-size: 1.8rem;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background-color: var(--accent-color);
         }
         .portfolio-img {
             aspect-ratio: 1 / 1;
             object-fit: cover;
             width: 100%;
-            border: 3px solid #ddd;
-            transition: transform 0.3s ease;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            margin-bottom: 1rem;
         }
         .portfolio-img:hover {
-            transform: scale(1.05);
+            transform: translateY(-10px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
         }
-        @media (min-width: 768px) {
-            .portfolio-img {
-                max-width: 160px;
-                margin: auto;
-            }
+        .service-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+        .contact-info {
+            background: var(--secondary-color);
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-bottom: 1rem;
         }
         .contact a.button {
             display: inline-block;
             margin-top: 1rem;
-            background-color: #1c1c1c;
+            background-color: var(--accent-color);
             color: white;
-            padding: 0.75rem 1.5rem;
-            border-radius: 4px;
+            padding: 1rem 2rem;
+            border-radius: 8px;
             text-decoration: none;
             font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .contact a.button:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
         }
         footer {
-            background: #f5f5f5;
+            background: var(--primary-color);
+            color: white;
             text-align: center;
-            padding: 2rem 1rem;
+            padding: 3rem 1rem;
             font-size: 0.9rem;
-            color: #666;
-        }
-        .card-img-top {
-            max-width: 70%;
-            height: auto;
-            display: block;
-            margin: 20px auto;
         }
         .map-container {
             position: relative;
             width: 100%;
-            padding-bottom: 56.25%; /* 16:9 비율 */
+            padding-bottom: 56.25%;
             height: 0;
             overflow: hidden;
-            border-radius: 8px;
-            margin-top: 20px;
-            }
-
-            .map-container iframe {
+            border-radius: 12px;
+            margin-top: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .map-container iframe {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             border: 0;
+        }
+        .row {
+            margin-bottom: 1rem;
+        }
+        .lead {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+        p {
+            margin-bottom: 1rem;
+        }
+        .highlight {
+            background-color: var(--secondary-color);
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
             }
+            nav ul {
+                gap: 1rem;
+            }
+            section {
+                padding: 40px 20px;
+            }
+            header {
+                padding: 60px 20px;
+            }
+            h2 {
+                font-size: 1.8rem;
+            }
+        }
     </style>
 </head>
 <body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="80" tabindex="0">
 <header>
-    <h1>T셔츠 토탈 · 골프웨어 샘플 전문</h1>
+    <h1>진봉 샘플실</h1>
+    <p>골프웨어 · 티셔츠 샘플제작 전문</p>
     <p>소량제작도 정성스럽게. 당신의 브랜드를 시작하세요.</p>
 </header>
 
@@ -162,72 +252,174 @@
 
 <section id="about">
     <h2>샘플실 소개</h2>
-    <p>
-        진봉 샘플실은 서울 중랑구에 위치한 의류 전문 샘플 제작소로<br> 단순한 티셔츠부터 고기능성 골프웨어까지 다양한 의류를 소량부터 맞춤형으로 제작합니다.<br>
-        수년간의 봉제 노하우와 현장 경험을 바탕으로, 브랜드 런칭 전 단계에 필요한 샘플 작업을 꼼꼼하고 정성스럽게 진행합니다.<br>
-        고객과의 1:1 피드백을 통해 원하는 핏과 디자인을 완성하며, 최신 원단 및 부자재 추천까지 컨설팅이 가능합니다.<br>
-        트렌드에 맞춘 오버핏, 피그먼트 워싱, 그래픽 의류 등도 커버하고 있으며<br> 퀄리티 높은 완성도로 재주문율이 높은 것이 특징입니다.<br>
-    </p>
-    <p>
-        빠른 납기와 소량 대응이 가능한 시스템을 갖추고 있어, 신생 브랜드부터 기존 업체까지 다양한 클라이언트에게 신뢰받고 있습니다.
-        고급 골프웨어, 브랜드 기획 의류, 바람막이 및 기능성 원단 제품까지 폭넓은 제작이 가능합니다.
-    </p>
-    <p>딱하나 무조건 약속드립니다. 샘플의류의 차이는 퀄리티에서 나옵니다.최상의 퀄리티로 제공해드립니다.</p>
-    <img src="images/asd.PNG" class="card-img-top" alt="골프웨어 및 기능성 의류 샘플 제작 중인 작업 사진">
+    <div class="row">
+        <div class="col-lg-8">
+            <p class="lead">
+                진봉 샘플실은 서울 중랑구에 위치한 의류 전문 샘플 제작소로, 단순한 티셔츠부터 고기능성 골프웨어까지 다양한 의류를 소량부터 맞춤형으로 제작합니다.
+            </p>
+            <p>
+                수년간의 봉제 노하우와 현장 경험을 바탕으로, 브랜드 런칭 전 단계에 필요한 샘플 작업을 꼼꼼하고 정성스럽게 진행합니다. 고객과의 1:1 피드백을 통해 원하는 핏과 디자인을 완성하며, 최신 원단 및 부자재 추천까지 컨설팅이 가능합니다.
+            </p>
+            <p>
+                트렌드에 맞춘 오버핏, 피그먼트 워싱, 그래픽 의류 등도 커버하고 있으며, 퀄리티 높은 완성도로 재주문율이 높은 것이 특징입니다. 빠른 납기와 소량 대응이 가능한 시스템을 갖추고 있어, 신생 브랜드부터 기존 업체까지 다양한 클라이언트에게 신뢰받고 있습니다.
+            </p>
+            <p class="highlight">
+                <strong>딱하나 무조건 약속드립니다.</strong><br>
+                샘플의류의 차이는 퀄리티에서 나옵니다.<br>
+                최상의 퀄리티로 제공해드립니다.
+            </p>
+        </div>
+        <div class="col-lg-4">
+            <img src="images/asd.PNG" class="img-fluid rounded shadow" alt="서울 중랑구 진봉 샘플실 - 골프웨어 및 기능성 의류 샘플 제작 작업장">
+        </div>
+    </div>
 </section>
 
 <section id="services">
     <h2>주요 서비스</h2>
-    <ul>
-        <li>티셔츠 토탈 제작 (기본티, 오버핏, 피그먼트, 그래픽 등)</li>
-        <li>골프웨어 (상의·하의, 바람막이, 기능성 원단 적용 의류)</li>
-        <li>브랜드 초안 샘플 제작 및 1:1 피드백</li>
-        <li>패턴 수정 및 맞춤 핏 조정</li>
-        <li>원단 추천 및 자재 매칭 컨설팅</li>
-        <li>빠른 납기 · 소량 제작 대응 가능</li>
-        <li><strong>※ 애견의류는 제외됩니다</strong></li>
-    </ul>
-    <img src="images/A3.jpg" class="card-img-top" alt="다양한 기능성 의류 샘플 이미지">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="service-card">
+                <h3>티셔츠 토탈 제작</h3>
+                <ul>
+                    <li>기본티 (라운드넥, V넥)</li>
+                    <li>오버핏 티셔츠</li>
+                    <li>피그먼트 티셔츠</li>
+                    <li>그래픽 디자인 티셔츠</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="service-card">
+                <h3>골프웨어 전문</h3>
+                <ul>
+                    <li>골프 상의·하의</li>
+                    <li>골프 바람막이</li>
+                    <li>기능성 원단 골프웨어</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="service-card">
+                <h3>브랜드 컨설팅</h3>
+                <ul>
+                    <li>브랜드 초안 샘플 제작</li>
+                    <li>1:1 맞춤 피드백</li>
+                    <li>패턴 수정 및 핏 조정</li>
+                    <li>원단 및 자재 추천</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="service-card">
+                <h3>원단 및 자재</h3>
+                <ul>
+                    <li>고급 원단 추천</li>
+                    <li>기능성 자재 매칭</li>
+                    <li>빠른 납기 시스템</li>
+                    <li>소량 제작 대응</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <p class="text-center mt-4"><strong>※ 애견의류는 제외됩니다</strong></p>
 </section>
 
 <section id="portfolio" class="portfolio">
     <h2>포트폴리오</h2>
-    <div class="row g-3">
-        <div class="col-6 col-md-3"><img src="images/1.jpg" class="portfolio-img img-fluid rounded-circle" alt="샘플1"></div>
-        <div class="col-6 col-md-3"><img src="images/2.png" class="portfolio-img img-fluid rounded-circle" alt="샘플2"></div>
-        <div class="col-6 col-md-3"><img src="images/3.jpg" class="portfolio-img img-fluid rounded-circle" alt="샘플3"></div>
-        <div class="col-6 col-md-3"><img src="images/4.png" class="portfolio-img img-fluid rounded-circle" alt="샘플4"></div>
-        <div class="col-6 col-md-3"><img src="images/5.jpg" class="portfolio-img img-fluid rounded-circle" alt="샘플5"></div>
-        <div class="col-6 col-md-3"><img src="images/6.png" class="portfolio-img img-fluid rounded-circle" alt="샘플6"></div>
-        <div class="col-6 col-md-3"><img src="images/7.jpg" class="portfolio-img img-fluid rounded-circle" alt="샘플7"></div>
-        <div class="col-6 col-md-3"><img src="images/8.png" class="portfolio-img img-fluid rounded-circle" alt="샘플8"></div>
+    <div class="row g-4">
+        <div class="col-6 col-md-3" data-aos="fade-up">
+            <img src="images/1.jpg" class="portfolio-img" alt="진봉 샘플실 - 골프웨어 샘플 제작 사례 1">
+        </div>
+        <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="100">
+            <img src="images/2.png" class="portfolio-img" alt="진봉 샘플실 - 기능성 티셔츠 샘플 제작 사례 2">
+        </div>
+        <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="200">
+            <img src="images/3.jpg" class="portfolio-img" alt="진봉 샘플실 - 오버핏 티셔츠 샘플 제작 사례 3">
+        </div>
+        <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="300">
+            <img src="images/4.png" class="portfolio-img" alt="진봉 샘플실 - 피그먼트 티셔츠 샘플 제작 사례 4">
+        </div>
+        <div class="col-6 col-md-3" data-aos="fade-up">
+            <img src="images/5.jpg" class="portfolio-img" alt="진봉 샘플실 - 그래픽 티셔츠 샘플 제작 사례 5">
+        </div>
+        <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="100">
+            <img src="images/6.png" class="portfolio-img" alt="진봉 샘플실 - 기능성 바람막이 샘플 제작 사례 6">
+        </div>
+        <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="200">
+            <img src="images/7.jpg" class="portfolio-img" alt="진봉 샘플실 - 골프웨어 상의 샘플 제작 사례 7">
+        </div>
+        <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="300">
+            <img src="images/8.png" class="portfolio-img" alt="진봉 샘플실 - 골프웨어 하의 샘플 제작 사례 8">
+        </div>
     </div>
 </section>
 
 <section id="contact" class="contact">
     <h2>문의 및 연락처</h2>
-    <p>📍 서울 중랑구 겸재로64길 19</p>
-    <p>📞 <a href="tel:01040232066">010-4023-2066 바로걸기</a></p>
-    <p>📞 <a href="tel:01026147121">010-2614-7121 바로걸기</a></p>
-    <p>✉️ E-mail: <a href="#" onclick="copyEmail()">giaddd@naver.com</a></p>
-    <div class="map-container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3161.5392243252736!2d127.09356487632401!3d37.58946652281219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357cba5859155d8d%3A0xdb28efef6dec20a4!2z7ISc7Jq47Yq567OE7IucIOykkeuekeq1rCDqsrjsnqzroZw2NOq4uCAxOQ!5e0!3m2!1sko!2skr!4v1744247408710!5m2!1sko!2skr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="contact-info">
+                <h3>연락처 정보</h3>
+                <p>📍 서울 중랑구 겸재로64길 19 (진봉 샘플실)</p>
+                <p>📞 <a href="tel:01040232066" class="text-decoration-none">010-4023-2066 바로걸기</a></p>
+                <p>📞 <a href="tel:01026147121" class="text-decoration-none">010-2614-7121 바로걸기</a></p>
+                <p>✉️ E-mail: <a href="#" onclick="copyEmail()" class="text-decoration-none">giaddd@naver.com</a></p>
+                <p>⏰ 영업시간: 평일 09:00 - 18:00</p>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3161.5392243252736!2d127.09356487632401!3d37.58946652281219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357cba5859155d8d%3A0xdb28efef6dec20a4!2z7ISc7Jq47Yq567OE7IucIOykkeuekeq1rCDqsrjsnqzroZw2NOq4uCAxOQ!5e0!3m2!1sko!2skr!4v1744247408710!5m2!1sko!2skr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="진봉 샘플실 위치"></iframe>
+            </div>
+        </div>
     </div>
 </section>
 
 <footer>
-    &copy; 2025 진봉 샘플실. All rights reserved.
+    <div class="container">
+        <p>&copy; 2024 진봉 샘플실. All rights reserved.</p>
+    </div>
 </footer>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
+    AOS.init({
+        duration: 1000,
+        once: true
+    });
+
     function copyEmail() {
         const email = 'giaddd@naver.com';
         navigator.clipboard.writeText(email).then(() => {
-            alert('복사되었습니다: ' + email);
+            alert('이메일이 복사되었습니다: ' + email);
         }).catch(err => {
             alert('복사에 실패했습니다 😥');
         });
     }
-    </script>
+
+    // 스크롤 시 네비게이션 활성화
+    document.addEventListener('scroll', function() {
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link');
+        
+        let current = '';
+        
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            if (pageYOffset >= sectionTop - 60) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href').substring(1) === current) {
+                link.classList.add('active');
+            }
+        });
+    });
+</script>
 </body>
 </html>
